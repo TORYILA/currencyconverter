@@ -1,0 +1,91 @@
+.text1{
+    font-size: 30px;
+    margin: 0;
+   }
+   .top{
+    display: flex;
+    flex-direction: row;
+   }
+   .main-div{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+   }
+   .exchangetab{
+    position: relative;
+            border: solid;
+            border-width: 1px;
+            width: 33%;
+            border-color: rgb(170, 167, 167);
+            padding: 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+        .inpute{
+            display: block;
+        }
+        .selectfrom, .selectto{
+            background-color: teal;
+            border-radius: 5px;
+            color: rgb(214, 203, 203);
+            font-family: "lora", sans-serif;
+        }
+        .top-right{
+            margin-left: 20%;
+        }
+        .selectfrom{
+            margin-bottom: 5px;
+        }
+        .convertBut{
+            background-color: brown;
+            color: rgb(214, 203, 203);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .from-to{
+            font-weight: bold;
+            font-family: "sedan sc", sans-serif;
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+        .text2{
+            margin: 0;
+            margin-top: 5px;
+            font-family: "lora", sans-serif;
+            font-size: 15px;
+            visibility: hidden;
+            height: 0;
+        }
+        .swapbutton{
+            position: absolute;
+            top: 58%;
+            left: 45%;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        .swapicon{
+            width: 25px;
+        }
+        
+    
+        .tooltip{
+            background-color: rgb(255, 253, 250);
+            position: absolute;
+            top: 78%;
+            left: 46%;
+            border-radius: 4px;
+            color: rgb(83, 80, 80);
+            opacity: 0;
+            transition: opacity 0.1s;
+        }
+        .swapbutton:hover +.tooltip{
+            opacity: 1;
+        }
+        .swapbutton:active +.tooltip{
+            opacity: 0;
+        }

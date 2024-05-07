@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+15+Charted&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="currencyconvert.css">
+</head>
+<body>
+    <div class="main-div">
+        
+        
+        <div class="exchangetab">
+            <p class="text1">Convert money</p>
+            <div class="top">
+                <div class="top-left">
+                    <p class="from-to">From</p>
+                    <select class="selectfrom" id="fromCurrency"></select>
+                    <input class="inpute" type="number" id="fromAmount" value="0">
+                    
+                </div>
+                
+                <div class="top-right">
+                    <p class="from-to" >To</p>
+                    <select class="selectto" id="toCurrency"></select>
+                    <p class="text2" id="convertedResult"></p>
+                    <input class="inputee" type="number2" id="toAmount" value="">
+                </div>
+            </div>
+            <button class="swapbutton" onclick="swapElements()"><img class="swapicon" src="swap.png" alt=""></button>
+            <div class="tooltip">Swap</div>
+
+            <button class="convertBut" id="convertButton">Convert</button>
+            
+            
+                
+            
+        </div>
+    </div>
+    
+    <script src="currencyconvert.js"></script>
+</body>
+</html>
