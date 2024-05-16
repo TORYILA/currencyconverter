@@ -1,10 +1,11 @@
 .text1{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+    color: rgb(173, 150, 107);
    }
    .top{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
    }
    .main-div{
     align-content: center;
@@ -12,30 +13,28 @@
     justify-content: center;
    }
    .exchangetab{
-    position: relative;
+            position: relative;
             border: solid;
             border-width: 1px;
-            width: 450px;
-            height: 150px;
+            width: 300px;
+            height: 250px;
             border-color: rgb(170, 167, 167);
             padding: 10px;
-            border-radius: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             display: flex;
             flex-direction: column;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
         }
         .inpute, .inputee{
             display: block;
-            width: 60%;
+            width: 95%;
         }
         .selectfrom, .selectto{
             background-color: teal;
             border-radius: 5px;
             color: rgb(214, 203, 203);
             font-family: "lora", sans-serif;
-        }
-        .top-right{
-            margin-left: 20%;
         }
         .selectfrom{
             margin-bottom: 5px;
@@ -44,8 +43,7 @@
             background-color: brown;
             color: rgb(214, 203, 203);
             border: none;
-            height: 20px;
-            border-radius: 5px;
+            height: 30px;
             cursor: pointer;
             margin-top: 5px;
             position: absolute;
@@ -57,6 +55,7 @@
             font-weight: bold;
             font-family: "sedan sc", sans-serif;
             font-size: 20px;
+            margin: 0;
             margin-bottom: 2px;
         }
         .text2{
@@ -68,35 +67,21 @@
             height: 0;
         }
         .swapbutton{
-            position: absolute;
-            top: 58%;
-            left: 45%;
+            margin-top: 5%;
+            margin-left: 43%;
             border: none;
             background-color: white;
             cursor: pointer;
-        }
-        .swapicon{
             width: 25px;
         }
         
-    
-        .tooltip{
-            background-color: rgb(255, 253, 250);
-            position: absolute;
-            top: 76%;
-            left: 46%;
-            border-radius: 4px;
-            color: rgb(83, 80, 80);
-            opacity: 0;
-            transition: opacity 0.1s;
-        }
         .swapbutton:hover +.tooltip{
             opacity: 1;
         }
         .swapbutton:active +.tooltip{
             opacity: 0;
         }
-
+        
         @media screen and (max-width: 600px) {
             .exchangetab{
                 width: 300px;
